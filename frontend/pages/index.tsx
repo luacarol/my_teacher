@@ -1,10 +1,9 @@
 import { NextPage } from "next";
+import Cabecalho from "../src/components/Cabecalho";
 
 const Home: NextPage = () => {
   return (
-    <div>
-      Luana Caroliny
-    </div>
+    <Cabecalho></Cabecalho>
   )
 }
 
