@@ -1,6 +1,8 @@
+import { CabecalhoContainer } from "./Cabecalho.style";
+
 const Cabecalho = () => {
     return (
-        <div>Cabeçalho</div>
+        <CabecalhoContainer>Ola, eu sou um cabeçalho</CabecalhoContainer>
     )
 }
 
