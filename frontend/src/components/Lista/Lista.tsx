@@ -1,49 +1,27 @@
 import { Button } from "@mui/material"
+import { Professor } from "../../@types/professor";
 import { Descricao, Foto, Informacoes, ItemLista, ListaStyled, Nome, Valor } from "./Lista.style";
 
-const Lista = () => {
+interface ListaProps {
+    professores: Professor[],
+}
+
+const Lista = (props: ListaProps) => {
     return (
         <>
             <ListaStyled>
-                <ItemLista>
-                    <Foto src="https://github.com/luacarol.png"></Foto>
-                    <Informacoes>
-                        <Nome>Luana Caroliny</Nome>
-                        <Valor>R$ 180,00</Valor>
-                        <Descricao>Aulas de Programação, Criação de Sites e Jogos.</Descricao>
-                        <Button>Marcar Aula</Button>
-                    </Informacoes>
-                </ItemLista>
 
-                <ItemLista>
-                    <Foto src="https://github.com/luacarol.png"></Foto>
-                    <Informacoes>
-                        <Nome>Luana Caroliny</Nome>
-                        <Valor>R$ 180,00</Valor>
-                        <Descricao>Aulas de Programação, Criação de Sites e Jogos.</Descricao>
-                        <Button>Marcar Aula</Button>
-                    </Informacoes>
-                </ItemLista>
-
-                <ItemLista>
-                    <Foto src="https://github.com/luacarol.png"></Foto>
-                    <Informacoes>
-                        <Nome>Luana Caroliny</Nome>
-                        <Valor>R$ 180,00</Valor>
-                        <Descricao>Aulas de Programação, Criação de Sites e Jogos.</Descricao>
-                        <Button>Marcar Aula</Button>
-                    </Informacoes>
-                </ItemLista>
-
-                <ItemLista>
-                    <Foto src="https://github.com/luacarol.png"></Foto>
-                    <Informacoes>
-                        <Nome>Luana Caroliny</Nome>
-                        <Valor>R$ 180,00</Valor>
-                        <Descricao>Aulas de Programação, Criação de Sites e Jogos.</Descricao>
-                        <Button>Marcar Aula</Button>
-                    </Informacoes>
-                </ItemLista>
+                {props.professores.map(professor => (
+                    <ItemLista>
+                        <Foto src={professor.foto}></Foto>
+                        <Informacoes>
+                            <Nome>{professor.nome}</Nome>
+                            <Valor>{professor.valor_hora}</Valor>
+                            <Descricao>{professor.descricao}</Descricao>
+                            <Button sx={{ width: '70%' }}>Marcar Aula {professor.nome}</Button>
+                        </Informacoes>
+                    </ItemLista>
+                ))}
             </ListaStyled>
         </>
     )
