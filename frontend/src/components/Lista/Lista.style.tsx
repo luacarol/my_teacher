@@ -15,6 +15,11 @@ export const ListaStyled = styled('ul')`
     }
 `
 
+export const ListaVazia = styled('h2')`
+    text-align: center;
+    padding: ${(props) => props.theme.spacing(20, 0)};
+`
+
 export const ItemLista = styled('li')`
     list-style: none;    
 `
