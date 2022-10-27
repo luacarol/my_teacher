@@ -14,6 +14,36 @@ const Lista = () => {
                         <Button>Marcar Aula</Button>
                     </Informacoes>
                 </ItemLista>
+
+                <ItemLista>
+                    <Foto src="https://github.com/luacarol.png"></Foto>
+                    <Informacoes>
+                        <Nome>Luana Caroliny</Nome>
+                        <Valor>R$ 180,00</Valor>
+                        <Descricao>Aulas de Programação, Criação de Sites e Jogos.</Descricao>
+                        <Button>Marcar Aula</Button>
+                    </Informacoes>
+                </ItemLista>
+
+                <ItemLista>
+                    <Foto src="https://github.com/luacarol.png"></Foto>
+                    <Informacoes>
+                        <Nome>Luana Caroliny</Nome>
+                        <Valor>R$ 180,00</Valor>
+                        <Descricao>Aulas de Programação, Criação de Sites e Jogos.</Descricao>
+                        <Button>Marcar Aula</Button>
+                    </Informacoes>
+                </ItemLista>
+
+                <ItemLista>
+                    <Foto src="https://github.com/luacarol.png"></Foto>
+                    <Informacoes>
+                        <Nome>Luana Caroliny</Nome>
+                        <Valor>R$ 180,00</Valor>
+                        <Descricao>Aulas de Programação, Criação de Sites e Jogos.</Descricao>
+                        <Button>Marcar Aula</Button>
+                    </Informacoes>
+                </ItemLista>
             </ListaStyled>
         </>
     )
