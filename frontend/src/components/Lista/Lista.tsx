@@ -12,7 +12,7 @@ const Lista = (props: ListaProps) => {
             {props.professores.length > 0 ? (
                 <ListaStyled>
                     {props.professores.map(professor => (
-                        <ItemLista>
+                        <ItemLista key={professor.id}>
                             <Foto src={professor.foto}></Foto>
                             <Informacoes>
                                 <Nome>{professor.nome}</Nome>
