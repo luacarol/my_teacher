@@ -16,7 +16,7 @@ const Lista = (props: ListaProps) => {
                             <Foto src={professor.foto}></Foto>
                             <Informacoes>
                                 <Nome>{professor.nome}</Nome>
-                                <Valor>{professor.valor_hora}</Valor>
+                                <Valor>{professor.valor_hora.toLocaleString('pt-BR', { minimumFractionDigits: 2, style: 'currency', currency: 'BRL' })}</Valor>
                                 <Descricao>{professor.descricao}</Descricao>
                                 <Button sx={{ width: '70%' }}>Marcar Aula {professor.nome}</Button>
                             </Informacoes>
