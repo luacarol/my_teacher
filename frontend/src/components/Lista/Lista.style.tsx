@@ -12,6 +12,10 @@ export const Foto = styled('img')`
     
 `
 
+export const Informacoes = styled('div')`
+    
+`
+
 export const Nome = styled('h3')`
     
 `
